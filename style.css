@@ -7,11 +7,7 @@
     background-color: var(--color-background);
 }
 body {
-    overflow-x: hidden;
     font-family: Optima Roman;
-    background-attachment:fixed;
-    background-position-x:center;
-    background-size:cover;
 }
 
 :root {
@@ -21,211 +17,108 @@ body {
     --font-family:var(--font-family);
 }
 
-@media screen and (min-width: 768px) {
+/*MOBILE FIRST*/
 
-header {
-    display: flex;
-    width: 100%;
-    height: 70px;
-    padding: 12px;
-    background-color: var(--color-background);
-}
-
-header > div {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header > div > a {
-    width: 75%;
-}
-
-h1 {
-    width: 25%;
-    font-size: 16px;
-    color: var(--color-secondary);
-    text-align: end;
-}
-
-.logo {
-    display: flex;
-    width: 50%;
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-img {
-
-   width: 100%;
-   filter:grayscale(20%);
-}
-
-.info {
-    display: flex;
-    width: 100%;
-    padding: 8px 86px 8px 57px;
-    justify-content: space-between;
-    position: absolute;
-    top: 10em;
-    color: var(--color-background);
-    background-color: transparent;
-}
-
-.parrafo-1, .parrafo-2 {
-    background-color: transparent;
-    font-size: 30px;
-}
-
-.parrafo-1 {
-    text-align:right;
-    padding-right: 10px;
-}
-
-.botones {
-    display: flex;
-    width: 100%;
-    gap:45px;
-    background-color: transparent;
-    padding: 17px 6px 21px 25px;
-    position: absolute;
-    top: 16em;
-    justify-content: space-around;
-}
-
-.botones > a {
-    font-size: 28px;
-    background-color: var(--color-secondary);
-    color: var(--color-background);
-    border-radius: 5px;
-    padding: 0 24px 0 24px; 
-}
-
-a:hover {
-    color: rgb(199, 170, 192);   
-}
-a:active {
-    color:rgb(153, 106, 142);
-}
-
-footer {
-    width: 100%;
-    height: 50px;
-    bottom: 0;
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-background);
-}
-
-.socialmedia {
-    display: flex;
-    margin-right: 40px;
-    gap: 5px;
-    width: 50px;
-    align-items: center;
-}
-
-span {
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    color:var(--color-secondary);
-    justify-content: center;
-}
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width:300px) and (max-width: 620px) {
 
     header {
         display: flex;
+        position: fixed;
+        z-index: 1;
         width: 100%;
-        height: 40px;
+        height: 50px;
         padding: 8px;
         background-color: var(--color-background);
     }
     
-    header > div {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    header > div > a {
-        width: 75%;
-    }
-    
-    h1 {
-        width: 25%;
-        font-size: 9px;
-        color: var(--color-secondary);
-        text-align: end;
-    }
-    
     .logo {
         display: flex;
+        width: 65%;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0.5em;
+    }
+
+    .logo > a > img {
+        width: 160px;
+    }
+
+    .name {
+        display: flex;
         width: 50%;
+        justify-content: end;
+        align-items: center;
+        padding-right: 0.5em;
+    }
+  
+    
+    h1 {
+        font-size: 13px;
+        color: var(--color-secondary);
     }
     
     main {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
+        height: 470px;
+        padding: 50px 0 50px 0;
     }
+
+    .main-background {
+        display: flex;
+        width: 100%;
+        height: 470px;
+    }
+
     
-    img {
-    
-       width: 100%;
+    .main-background > img {
+        width: 100%;
+        height: 470px;
        filter:grayscale(20%);
+       object-fit: cover;
     }
     
     .info {
         display: flex;
         width: 100%;
-        padding: 24px;
-        justify-content: space-around;
+        padding: 17px 17px 17px 13px;
+        justify-content: space-evenly;
         position: absolute;
-        right: 0.5em;
-        gap:8em;
+        gap: 4em;
         top: 3em;
-        color: var(--color-background);
+        color: var(--color-primary);
         background-color: transparent;
     }
     
     .parrafo-1, .parrafo-2 {
-        background-color: transparent;
-        font-size: 16px;
+        background-color: #c6c1bd3f;
+        border-radius: 5px;
+        padding: 0 5px 0 5px;
+        font-size: 20px;
     }
     
     .parrafo-1 {
         text-align:right;
-        padding-right: 10px;
     }
     
     .botones {
         display: flex;
         width: 100%;
+        padding: 5px;
         background-color: transparent;
         position: absolute;
-        top: 9em;
+        top: 16em;
+        gap: 4em;
         justify-content: space-around;
     }
     
     .botones > a {
-        font-size: 10px;
+        font-size: 20px;
         background-color: var(--color-secondary);
         color: var(--color-background);
         border-radius: 5px;
         padding: 0 5px; 
+        margin-left: 19px;
     }
     
     a:hover {
@@ -241,81 +134,134 @@ span {
         bottom: 0;
         display: flex;
         position: fixed;
-        justify-content: center;
         align-items: center;
+        justify-content: space-between;
+        background-color: var(--color-background);
+    }
+
+    .socialmedia {
+        display: flex;
+        width: 40%;
+        gap: 10px;
+        justify-content: start;
+        padding-left: 1em;
+    }
+
+    .ig, .fb {
+        width: 30px;
+        height: 30px;
+    }
+
+    span {
+        display: flex;
+        width: 60%;
+        font-size: 10px;
+        color:var(--color-secondary); 
+    }
+
+}
+    
+@media screen and (min-width:620px) and (max-width: 1024px) {
+
+    header {
+        display: flex;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 65px;
+        padding: 8px;
         background-color: var(--color-background);
     }
     
-    .socialmedia {
+    .logo {
         display: flex;
-        margin-right: 10px;
-        gap: 5px;
-        width: 28px;
+        width: 65%;
+        justify-content: space-between;
         align-items: center;
+        padding-left: 0.5em;
     }
-    
-    span {
-        display: flex;
-        align-items: center;
-        font-size: 20px;
-        color:var(--color-secondary);
-        justify-content: center;
-    }
-    }
-    
 
-@media screen and (min-width: 1280px) and (max-width: 1440px) {
-    
-    header {
-        height: 80px;
-    } 
-    
-    header > div {
-        padding: 0 15px;   
+    .logo > a > img {
+        width: 250px;
     }
+
+    .name {
+        display: flex;
+        width: 50%;
+        justify-content: end;
+        align-items: center;
+        padding-right: 0.5em;
+    }
+  
     
     h1 {
-        font-size: 25px;
-    }
-    
-    .logo {
-        width: 60%;
+        font-size: 19px;
+        color: var(--color-secondary);
     }
     
     main {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
+        height: 470px;
+        padding-top: 32px;
     }
 
-    .info {
-        padding: 8px 100px 8px 60px;
-        top:16em;
+    .main-background {
+        display: flex;
+        width: 100%;
+    }
+
+    
+    .main-background > img {
+        width: 100%;
+        height: 490px;
+       filter:grayscale(20%);
+       object-fit: cover;
     }
     
+    .info {
+        display: flex;
+        width: 100%;
+        padding: 14px;
+        justify-content: space-between;
+        position: absolute;
+        top: 5em;
+        color: var(--color-primary);
+        background-color: transparent;
+    }
     
     .parrafo-1, .parrafo-2 {
-        background-color: transparent;
-        font-size: 40px;
+        background-color: #c6c1bd54;
+        border-radius: 5px;
+        padding: 0 5px 0 5px;
+        font-size: 27px;
     }
     
     .parrafo-1 {
         text-align:right;
-        padding-right: 10px;
+    }
+
+    .parrafo-2 {
+        padding-right: 20px;
     }
     
     .botones {
-        top: 23em;
-        gap: 16em;
+        display: flex;
+        width: 100%;
+        background-color: transparent;
+        position: absolute;
+        top: 20em;
+        padding-right: 24px;
+        justify-content: space-between;
     }
     
     .botones > a {
-        font-size: 30px;
+        font-size: 32px;
         background-color: var(--color-secondary);
         color: var(--color-background);
         border-radius: 5px;
-        padding: 0 24px 0 24px; 
+        padding: 0 5px;
+        margin-left: 44px;
     }
     
     a:hover {
@@ -326,72 +272,176 @@ span {
     }
     
     footer {
-        height: 60px;
+        width: 100%;
+        height: 50px;
+        bottom: 0;
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--color-background);
+        padding: 5px 0 5px 0;
     }
-    
+
     .socialmedia {
-        margin-right: 30px;
+        display: flex;
+        width: 40%;
+        gap: 10px;
+        justify-content: start;
+        padding-left: 1em;
     }
-    
+
+    .ig, .fb {
+        width: 30px;
+        height: 30px;
+    }
+
     span {
-        font-size: 33px;   
+        display: flex;
+        width: 60%;
+        font-size: 14px;
+        color:var(--color-secondary); 
     }
+
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width:1024px) and (max-width: 1440px) {
 
-    
     header {
-        height: 130px;
-    } 
-    
-    header > div {
-        padding: 0 24px;   
-    }
-    
-    h1 {
-        font-size: 38px;
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        background-color: var(--color-background);
+        align-items: center;
     }
     
     .logo {
-        width: 60%;
+        display: flex;
+        width: 65%;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1.5em;
+    }
+
+    .logo > a > img {
+        width: 70%;
+    }
+
+    .name {
+        display: flex;
+        width: 50%;
+        justify-content: end;
+        align-items: center;
+        padding-right: 1.5em;
+    }
+  
+    
+    h1 {
+        font-size: 24px;
+        color: var(--color-secondary);
     }
     
     main {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
+        padding-top: 100px;
     }
 
-    .info {
-        padding: 45px;
-        top: 16em;
-        right: 8px;
+    .main-background {
+        display: flex;
+        width: 100%;
+        height: 580px;
+    }
+
+    
+    .main-background > img {
+        width: 100%;
+        height: 580px;
+        filter: grayscale(20%);
+        object-fit: cover;
     }
     
-    .parrafo-1, .parrafo-2 { 
-        font-size: 60px;
+    .info {
+        display: flex;
+        width: 100%;
+        padding: 8px;
+        justify-content: space-around;
+        position: absolute;
+        top: 10em;
+        gap: 20em;
+        color: var(--color-primary);
+        background-color: transparent;
+    }
+    
+    .parrafo-1, .parrafo-2 {
+        background-color: #c6c1bd54;
+        border-radius: 5px;
+        padding: 0 5px 0 5px;
+        font-size: 34px;
+        margin-right: 39px;
+    }
+    
+    .parrafo-1 {
+        text-align:right;
     }
 
     .botones {
-        top: 30em;
+        display: flex;
+        width: 100%;
+        background-color: transparent;
+        position: absolute;
+        gap: 13em;
+        top: 26em;
+        justify-content: space-around;
     }
     
     .botones > a {
-        font-size: 42px; 
+        font-size: 40px;
+        background-color: var(--color-secondary);
+        color: var(--color-background);
+        border-radius: 5px;
+        padding: 0 5px;
+        margin-left: 33px;
+    }
+    
+    a:hover {
+        color: rgb(199, 170, 192);   
+    }
+    a:active {
+        color:rgb(153, 106, 142);
     }
     
     footer {
-        height: 80px;
+        width: 100%;
+        height: 60px;
+        bottom: 0;
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--color-background);
+       
     }
-    
+
     .socialmedia {
-        gap: 12px;
-        width: 100px;
+        display: flex;
+        width: 40%;
+        gap: 10px;
+        justify-content: start;
+        padding-left: 1em;
     }
-    
+
+    .ig, .fb {
+        width:36px;
+        height: 36px;
+    }
+
     span {
-        font-size: 40px; 
+        display: flex;
+        width: 60%;
+        font-size: 23px;
+        color:var(--color-secondary); 
     }
-} 
+
+}
