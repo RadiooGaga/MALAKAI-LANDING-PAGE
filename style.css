@@ -4,10 +4,11 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    background-color: var(--color-background);
 }
+
 body {
     font-family: Optima Roman;
+    background-color: var(--color-secondary);
 }
 
 :root {
@@ -60,20 +61,19 @@ body {
     main {
         display: flex;
         width: 100%;
-        height: 470px;
-        padding: 50px 0 50px 0;
+        height: 500px;
+        padding-top: 20px;
     }
 
     .main-background {
         display: flex;
         width: 100%;
-        height: 470px;
+        height: 500px;
     }
 
     
     .main-background > img {
         width: 100%;
-        height: 470px;
        filter:grayscale(20%);
        object-fit: cover;
     }
@@ -101,18 +101,18 @@ body {
         text-align:right;
     }
     
-    .botones {
+    .buttons {
         display: flex;
         width: 100%;
         padding: 5px;
         background-color: transparent;
         position: absolute;
         top: 16em;
-        gap: 4em;
+        gap: 6em;
         justify-content: space-around;
     }
     
-    .botones > a {
+    .buttons > a {
         font-size: 20px;
         background-color: var(--color-secondary);
         color: var(--color-background);
@@ -130,7 +130,7 @@ body {
     
     footer {
         width: 100%;
-        height: 40px;
+        height: 30px;
         bottom: 0;
         display: flex;
         position: fixed;
@@ -148,8 +148,8 @@ body {
     }
 
     .ig, .fb {
-        width: 30px;
-        height: 30px;
+        width: 15px;
+        height: 15px;
     }
 
     span {
@@ -202,20 +202,20 @@ body {
     main {
         display: flex;
         width: 100%;
-        height: 470px;
-        padding-top: 32px;
+        height: 500px;
+        padding-top: 40px;
+        background-color: var(--color-secondary);
     }
 
     .main-background {
         display: flex;
         width: 100%;
-        height: 480px;
+        height: 500px;
     }
 
     
     .main-background > img {
         width: 100%;
-        height: 480px;
        filter:grayscale(20%);
        object-fit: cover;
     }
@@ -226,7 +226,7 @@ body {
         padding: 14px;
         justify-content: space-between;
         position: absolute;
-        top: 5em;
+        top: 7.5em;
         color: var(--color-primary);
         background-color: transparent;
     }
@@ -246,17 +246,17 @@ body {
         padding-right: 20px;
     }
     
-    .botones {
+    .buttons {
         display: flex;
         width: 100%;
         background-color: transparent;
         position: absolute;
-        top: 20em;
+        top: 23em;
         padding-right: 24px;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     
-    .botones > a {
+    .buttons > a {
         font-size: 32px;
         background-color: var(--color-secondary);
         color: var(--color-background);
@@ -274,7 +274,7 @@ body {
     
     footer {
         width: 100%;
-        height: 35px;
+        height: 50px;
         bottom: 0;
         display: flex;
         position: fixed;
@@ -293,8 +293,8 @@ body {
     }
 
     .ig, .fb {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     }
 
     span {
@@ -347,7 +347,9 @@ body {
     main {
         display: flex;
         width: 100%;
+        height: 500px;
         padding-top: 80px;
+        
     }
 
     .main-background {
@@ -359,7 +361,6 @@ body {
     
     .main-background > img {
         width: 100%;
-        height: 500px;
         filter: grayscale(20%);
         object-fit: cover;
     }
@@ -388,7 +389,7 @@ body {
         text-align:right;
     }
 
-    .botones {
+    .buttons {
         display: flex;
         width: 100%;
         background-color: transparent;
@@ -398,7 +399,7 @@ body {
         justify-content: space-around;
     }
     
-    .botones > a {
+    .buttons > a {
         font-size: 40px;
         background-color: var(--color-secondary);
         color: var(--color-background);
@@ -416,7 +417,7 @@ body {
     
     footer {
         width: 100%;
-        height: 40px;
+        height: 60px;
         position: fixed;
         bottom: 0;
         padding: 10px 0 10px 0;
@@ -443,7 +444,7 @@ body {
     span {
         display: flex;
         width: 60%;
-        font-size: 23px;
+        font-size: 10px;
         color:var(--color-secondary); 
     }
 
