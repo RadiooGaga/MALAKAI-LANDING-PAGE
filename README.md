@@ -1,4 +1,3 @@
-# Landing-Malakai
-Landing page project 
+# Landing-Malakai - Landing page project
 
-Proyecto de diseño landing page para una web que ya existe de joyería.
+- Primer proyecto de diseño landing page para la web de joyería exclusiva "House of Malakai" con html y css.
