@@ -117,10 +117,14 @@ body {
         padding: 0px 30px 0px 35px;
         position: absolute;
         top: 19em;
+        gap: 100px;
         justify-content: space-evenly;
     }
     
     .buttons > a {
+        display: flex;
+        justify-content: center;
+        width: 40%;
         font-size: 16px;
         background-color: var(--color-secondary);
         color: var(--color-background);
@@ -282,6 +286,8 @@ body {
     }
     
     .buttons > a {
+        display: flex;
+        justify-content: center;
         font-size: 25px;
         background-color: var(--color-secondary);
         color: var(--color-background);
@@ -402,7 +408,7 @@ body {
         width: 100%;
         justify-content: space-around;
         position: absolute;
-        bottom: 27em;
+        bottom: 7em;
         color: var(--color-primary); 
     }
     
@@ -423,7 +429,7 @@ body {
         display: flex;
         width: 100%;
         position: absolute;
-        bottom: 32em;
+        bottom: 11em;
         justify-content: space-around;
     }
     
