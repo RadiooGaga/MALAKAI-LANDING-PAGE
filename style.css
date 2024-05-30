@@ -558,7 +558,7 @@ body {
         padding: 8px;
         justify-content: space-around;
         position: absolute;
-        bottom: 10em;
+        bottom: 5em;
         gap: 11em;
         color: var(--color-primary);
         background-color: transparent;
@@ -582,7 +582,7 @@ body {
         width: 100%;
         position: absolute;
         gap: 8em;
-        bottom: 16em;
+        bottom: 10em;
         justify-content: space-around;
     }
     
