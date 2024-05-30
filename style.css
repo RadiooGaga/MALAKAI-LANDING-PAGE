@@ -596,7 +596,7 @@ body {
     }
     
     .buttons > a {
-        font-size: 40px;
+        font-size: 30px;
         background-color: var(--color-secondary);
         color: var(--color-background);
         border-radius: 5px;
@@ -739,13 +739,13 @@ body {
     .buttons {
         display: flex;
         width: 100%;
-        position: relative;
-        bottom: 20em;
+        position: absolute;
+        bottom: 13em;
         justify-content: space-evenly;
     }
     
     .buttons > a {
-        font-size: 50px;
+        font-size: 40px;
         background-color: var(--color-secondary);
         color: var(--color-background);
         border-radius: 5px;
